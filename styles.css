@@ -57,6 +57,15 @@
         display: none;
     }
 
+    #mobile-start {
+        display: none;
+    }
+    
+    #web-tablet {
+        display: flex;
+    }
+
+
     #tablet {
         display: none;
     }
@@ -79,8 +88,17 @@
         display: none;
     }
 
+    #web-tablet {
+        display: flex;
+    }
+
+
     #tablet {
         display: block;
+    }
+
+    #mobile-start {
+        display: none;
     }
 
     #mobile {
@@ -103,7 +121,7 @@
 
 @media (max-width: 767px) {
 
-    .start_block {
+    .start_block_mobile {
         animation: none !important;
         transition: none !important;
     }
@@ -119,12 +137,20 @@
         display: none;
     }
 
+    #web-tablet {
+        display: none;
+    }
+
     #tablet {
         display: none;
     }
 
     #mobile {
         display: block;
+    }
+
+    #mobile-start {
+        display: flex;
     }
 
     iframe {
@@ -137,7 +163,7 @@
         padding: 0 !important;
     }
 
-    .start_block,
+    .start_block_mobile,
     .footer {
         border-radius: 60px !important;
         padding-left: 24px !important;
@@ -163,9 +189,9 @@
         width: 100vw !important;
     }
 
-    .start_block div,
-    .start_block h2,
-    .start_block h1 {
+    .start_block_mobile div,
+    .start_block_mobile h2,
+    .start_block_mobile h1 {
         padding: 0 !important;
 
     }
@@ -185,14 +211,14 @@
         text-align: left !important;
     }
 
-    .start_block.toHome,
+    .start_block_mobile,
     .aboutme_block {
         padding-top: 80px;
         padding-bottom: 80px;
         height: fit-content !important;
     }
 
-    .start_block img {
+    .start_block_mobile img {
         width: 150px;
         height: 150px !important;
     }
@@ -364,6 +390,16 @@ header a:active {
     z-index: 1000;
     transition: position 0.5s ease;
     transition: height 0.5s ease;
+}
+
+.start_block_mobile {
+    box-sizing: border-box;
+    background-color: var(--block-blue);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .start_block.toHome {
