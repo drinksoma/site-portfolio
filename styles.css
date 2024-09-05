@@ -72,6 +72,13 @@
     
     #web {
         display: block;
+        width: fit-content !important;
+        max-width: 1200px !important;
+        align-items: center;
+    }
+
+    .skills-row {
+        width: 1200px;
     }
 }
 
@@ -536,8 +543,7 @@ img.hidden-element {
 }
 
 .skills-row {
-    width: 100%;
-    max-width: 1200px;
+    max-width: 1200px !important;
     box-sizing: border-box;
     padding: 0 40px;
     display: flex;
